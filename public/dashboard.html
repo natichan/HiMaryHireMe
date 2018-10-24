@@ -6,10 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link type="text/css" rel="stylesheet" href="./assets/materialize-v1.0.0/materialize/css/materialize.min.css" media="screen,projection" />
-  <title>HiMary HireMe</title>
+  <title>HiMary HireMe - Dashboard</title>
+  <link rel="stylesheet" href="src/CSS/dashboard.css">
 </head>
 
 <body>
+  <div class="container">
+    <!-- Login Reclutador -->
+    <div id="loginPage">
+      <div class="logo">
+        <h5>Aquí va un logo</h5>
+      </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password" type="password" class="validate">
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <button id="loginBtn" onclick="login()" class="btn">INGRESAR</button>
+    </div>
+    <!-- Dashboard Page -->
+    <div id="dashboard">
+      <h1>holi</h1>
+    </div>
+  </div>
+
 
 
   <script src="assets/materialize-v1.0.0/materialize/js/materialize.min.js"></script>
@@ -28,6 +55,7 @@
     };
     firebase.initializeApp(config);
   </script>
+  <script src="src/JS/dashboard.js"></script>
 </body>
 
 </html>
