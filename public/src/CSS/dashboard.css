@@ -1,0 +1,9 @@
+#dashboard {
+  display: none;
+}
+
+.logo {
+  height: 30vh;
+  width: 100%;
+  border: 1px solid black;
+}
