@@ -1,0 +1,11 @@
+{
+  "name": "himaryhireme",
+  "version": "1.0.0",
+  "description": "chatbot virtual assistance hire jobs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Natalia MH <nataliamh.88qgmail.com>",
+  "license": "ISC"
+}
