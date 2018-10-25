@@ -1,0 +1,17 @@
+.colowPurple{
+    background-color: #8342DC;
+    height: 250px;
+    padding-top: 45px;
+}
+.colorWhite{
+    background-color: rgba(255, 255, 255, 0.137);
+    height: 150px;
+}
+.bottomImg{
+    width: 30%;
+}
+.fa-chevron-right, .fa-chevron-left{
+    font-size: 3em;
+    padding: 50px 20px 0px 20px;
+    color: #009FE3;
+}
