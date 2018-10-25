@@ -1,7 +1,7 @@
 body{
     background-image: linear-gradient(to right, #8342dc, #02bfba);
 }
-h1, h4, h5, h6{
+h1, h4, h5, h6, h3{
     color: #333333;
 }
 h4{
@@ -61,7 +61,7 @@ a{
 .logo{
     margin-top: 10%;
 }
-.fa-user-tie, .fa-cogs, .fa-brain, .fa-language, .fa-map-marked-alt{
+.fa-user-tie, .fa-cogs, .fa-brain, .fa-language, .fa-map-marked-alt, .fa-exchange-alt, .fa-business-time, .fa-user-clock, .fa-hand-holding-usd{
     background: #009FE3;
     border-radius: 3em;
     font-size: 6em;
@@ -87,6 +87,19 @@ h4{
 }
 [type="radio"]:not(:checked)+span, [type="radio"]:checked+span{
     color: #333333;
+}
+h3{
+    text-align: center;
+    padding-top: 30%;
+    font-size: 20pt;
+}
+.fa-times{
+    float: right;
+    margin: 5%;
+    font-size: 20pt;
+}
+.mary{
+    height: 40%;
 }
 @media (max-width: 600px){
     .logo{
