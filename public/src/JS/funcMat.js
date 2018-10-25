@@ -5,7 +5,6 @@ $('.chips-autocomplete').chips({
       'UX-designer': null,
       'Back-end': null,
       'UI': null
-
     },
     limit: 1,
     minLength: 1
@@ -25,9 +24,8 @@ $('.chips-autocompleteDos').chips({
         'Node.js': null,
         'Git': null,
         'Bootstrap': null,
-        'Card-sorting': null,
+        'Card-sorting': null
         'Comunicación-visual': null,
-
       },
       limit: 8,
       minLength: 1
