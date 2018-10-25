@@ -134,16 +134,24 @@ body {
 }
 
 .skills {
-  margin-top: 30px;
+  margin-top: 5vh;
 }
 
 .info-boxes {
-  background: rgba(255, 255, 255, 0.486);
+  background: #ffffff7c;
   padding: 10px;
+  margin-bottom: 8px;
+  height: 72vh;
 }
 
-.info-boxes hr {
-  width: 100%;
+.info-boxes section {
+  background-color: #02bfb9a8;
+  margin-bottom: 7px;
+}
+
+.graphic-boxes {
+  background: rgba(255, 255, 255, 0.486);
+  margin-bottom: 8px;
 }
 
 .graphic {
@@ -186,7 +194,6 @@ body {
   border-radius: 100%;
   border: 5px solid #009fe3;
 }
-
 
 @media (max-width: 480px) {
   .login {
