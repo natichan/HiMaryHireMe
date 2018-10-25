@@ -1,0 +1,122 @@
+body{
+    background-image: linear-gradient(to right, #8342dc, #02bfba);
+}
+h1, h4, h5, h6, h3{
+    color: #333333;
+}
+h4{
+    padding-bottom: 7%;
+}
+section, main{
+    height: 100vh;
+}
+.rectangule{
+    width: 326px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.623);
+    margin-top: 5%;
+    border-radius: 1em;
+}
+.rectangule2{
+    width: 326px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.623);
+    margin-top: 5%;
+    border-radius: 1em;
+}
+h1{
+    font-weight: 600;
+}
+h5{
+    font-weight: 500;
+}
+h1, h5{
+    font-size: 15pt;
+}
+h6{
+    font-size: 12pt;
+    margin-top: 20%;
+    opacity: 0.5;
+}
+#goQuestions{
+    background-color: rgba(0, 159, 227, 1);
+    width: 183pt;
+    height: 45pt;
+    margin-top: 5%;
+}
+#goQuestions, a{
+    border-radius: 3em;
+    font-weight: 600;
+    font-size: 15pt;
+}
+a{
+    text-decoration: none;
+    background-color: #0ACC24;
+    color: #ffff;
+    padding: 10pt 30pt 10pt 30pt;
+    border:none;
+    width: 400pt;
+    height: 45pt;
+}
+.logo{
+    margin-top: 10%;
+}
+.fa-user-tie, .fa-cogs, .fa-brain, .fa-language, .fa-map-marked-alt, .fa-exchange-alt, .fa-business-time, .fa-user-clock, .fa-hand-holding-usd{
+    background: #009FE3;
+    border-radius: 3em;
+    font-size: 6em;
+    color: white;
+    width: 100pt;
+    height: 100pt;
+    text-align: center;
+    padding: 5%;
+    margin-top: 11%;
+    margin-bottom: 10%;
+}
+h4{
+    font-size: 16pt;
+}
+.chip{
+    background: #ffff;
+}
+.custom-class{
+    width: 5px;
+}
+.chips, form{
+    margin: 5% 5% 10% 5%;
+}
+[type="radio"]:not(:checked)+span, [type="radio"]:checked+span{
+    color: #333333;
+}
+h3{
+    text-align: center;
+    padding-top: 30%;
+    font-size: 20pt;
+}
+.fa-times{
+    float: right;
+    margin: 5%;
+    font-size: 20pt;
+}
+.mary{
+    height: 40%;
+}
+@media (max-width: 600px){
+    .logo{
+        margin-top: 50%;
+    }
+    .rectangule, .rectangule2{
+        width: 100%;
+        height: 600px;
+        margin: 5%;
+    }
+    #goQuestions{
+        margin-top: 20%;
+    }
+    .other{
+        margin-top: 10% !important;
+    }
+    .years{
+        margin-top: 30% !important;
+    }
+}
