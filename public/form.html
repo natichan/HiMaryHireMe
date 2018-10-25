@@ -14,150 +14,171 @@
 </head>
 
 <body>
-    <section id="welcome">
-        <h1>Ingresa los datos para que Mary te conecte con el candidato ideal</h1>
-        <button id="goQuestions">Vamos</button>
-    </section>
-    <section id="questions" style="display: none">
-        <form>
-            <div class="chips chips-autocomplete">
-                    <h5>1.¿Qué tipo de perfil estás buscando? Ej: Front-end, Chef.</h5>
-                    <input class="custom-class">
-                    <button href="#">OK<i class="fas fa-check"></i></button>
-                </div>
+    <main id="welcome">
+        <div>
+            <img src="./assets/img/logo.png" alt="logoHiMaryHireMe">
+            <h1>Ingresa los datos para que Mary te conecte con el candidato ideal</h1>
+            <button id="goQuestions">Vamos</button>
+        </div>
+    </main>
+    <section id="question" style="display: none" class="questions">
+        <div class="chips chips-autocomplete">
+                <h5>1.¿Qué tipo de perfil estás buscando? Ej: Front-end, Chef.</h5>
+                <input class="custom-class">
+                <a href="#question2">OK<i class="fas fa-check"></i></a>
+            </div>
+        </section>
+    <section id="question2" style="display: none" class="questions">
             <div class="chips chips-autocompleteDos">
                     <h5>2. Lista las habilidades técnicas necesarias para el cargo:</h5>
                     <input class="custom-class">
-                    <button href="#">OK<i class="fas fa-check"></i></button>
+                    <a href="#question3">OK<i class="fas fa-check"></i></a>
                 </div>
-            <div class="chips chips-autocompleteTres">
-                    <h5>3. Lista las competencias necesarias para el cargo:</h5>
-                    <input class="custom-class">
-                    <button href="#">OK<i class="fas fa-check"></i></button>
-                </div>
-            <div class="">
-                    <h5>4. Es necesario el manejo de más de un idioma:</h5>
-                    <form action="#">
-                            <p>
-                              <label>
-                                <input name="group1" type="radio" class="with-gap"/>
-                                <span>No</span>
-                              </label>
-                            </p>
-                            <p>
-                              <label>
-                                <input name="group1" type="radio" class="with-gap"/>
-                                <span>Si</span>
-                                <div class="chips chips-autocompleteCuatro chips-placeholder">
-                                        <input class="custom-class">
-                                    </div>
-                              </label>
-                            </p>
-                          </form>
-                    <button href="#">OK<i class="fas fa-check"></i></button>
-                </div>
+    </section>
+    <section id="question3" style="display: none" class="questions">
+        <div class="chips chips-autocompleteTres">
+                <h5>3. Lista las competencias necesarias para el cargo:</h5>
+                <input class="custom-class">
+                <a href="#question4">OK<i class="fas fa-check"></i></a>
+            </div>
+    </section>
+    <section id="question4" style="display: none" class="questions">
+        <div class="">
+            <h5>4. Es necesario el manejo de más de un idioma:</h5>
+            <form action="#">
+                    <p>
+                        <label>
+                        <input name="group1" type="radio" class="with-gap"/>
+                        <span>No</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                        <input name="group1" type="radio" class="with-gap"/>
+                        <span>Si</span>
+                        <div class="chips chips-autocompleteCuatro chips-placeholder">
+                                <input class="custom-class">
+                            </div>
+                        </label>
+                    </p>
+                    </form>
+            <a href="#question5">OK<i class="fas fa-check"></i></a>
+        </div>
+    </section>
+    <section id="question5" style="display: none" class="questions">
         <div class="chips chips-autocompleteCinco">
                 <h5>5. Ubicación donde se desempeñaran los labores:</h5>
                 <input class="custom-class">
-                <button href="#">OK<i class="fas fa-check"></i></button>
+                <a href="#question6">OK<i class="fas fa-check"></i></a>
             </div>
-            <div class="">
-                    <h5>6. Disposición de traslado:</h5>
-                    <form action="#">
-                            <p>
-                                <label>
-                                    <input name="group2" type="radio" class="with-gap" />
-                                    <span>No</span>
-                                </label>
+    </section>
+    <section id="question6" style="display: none" class="questions">
+        <div class="">
+                <h5>6. Disposición de traslado:</h5>
+                <form action="#">
+                        <p>
+                            <label>
+                                <input name="group2" type="radio" class="with-gap" />
+                                <span>No</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="group2" type="radio" class="with-gap" />
+                                <span>Si</span>
+                            </label>
+                        </p>
+                    </form>
+                <a href="#question7">OK<i class="fas fa-check"></i></a>
+            </div>
+    </section>
+    <section id="question7" style="display: none" class="questions">
+        <div class="">
+                <h5>7. Años de experiencia:</h5>
+                <form action="#">
+                        <p>
+                            <label>
+                                <input name="group3" type="radio" class="with-gap"/>
+                                <span>0</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="group3" type="radio" class="with-gap"/>
+                                <span>1-2años</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="group3" type="radio" class="with-gap"/>
+                                <span>3-4años</span>
+                            </label>
                             </p>
-                            <p>
-                                <label>
-                                    <input name="group2" type="radio" class="with-gap" />
-                                    <span>Si</span>
-                                </label>
-                            </p>
-                        </form>
-                    <button href="#">OK<i class="fas fa-check"></i></button>
-                </div>
-            <div class="">
-                    <h5>7. Años de experiencia:</h5>
-                    <form action="#">
-                            <p>
+                        <p>
                                 <label>
                                     <input name="group3" type="radio" class="with-gap"/>
-                                    <span>0</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input name="group3" type="radio" class="with-gap"/>
-                                    <span>1-2años</span>
-                                </label>
-                            </p>
-                            <p>
-                                <label>
-                                    <input name="group3" type="radio" class="with-gap"/>
-                                    <span>3-4años</span>
+                                    <span>4años+</span>
                                 </label>
                                 </p>
-                            <p>
-                                    <label>
-                                        <input name="group3" type="radio" class="with-gap"/>
-                                        <span>4años+</span>
-                                    </label>
-                                    </p>
-                            </form>
-                    <button href="#">OK<i class="fas fa-check"></i></button>
-                </div>
-            <div class="">
-                <h5>8. Disponibilidad:</h5>
-                <form action="#">
-                        <p>
-                            <label>
-                                <input name="group4" type="radio" class="with-gap" />
-                                <span>Inmediata</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input name="group4" type="radio" class="with-gap"/>
-                                <span>1-2semanas</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input name="group4" type="radio" class="with-gap"/>
-                                <span> 3semanas+</span>
-                            </label>
-                            </p>
                         </form>
-                <button href="#">OK<i class="fas fa-check"></i></button>
-                </div>
-            <div class="">
-                    <h5>9. Pretenciones de renta:</h5>
-                <form action="#">
-                        <p>
-                            <label>
-                                <input name="group5" type="radio" class="with-gap"/>
-                                <span>300-400mil</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input name="group5" type="radio" class="with-gap"/>
-                                <span>500-600mil</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input name="group5" type="radio" class="with-gap"/>
-                                <span>700-800mil+</span>
-                            </label>
-                            </p>
-                    </form>
-                <button href="#">OK<i class="fas fa-check"></i></button>
+                <a href="#question8">OK<i class="fas fa-check"></i></a>
             </div>
-        </form>
+    </section>
+    <section id="question8" style="display: none" class="questions">
+        <div class="">
+            <h5>8. Disponibilidad:</h5>
+            <form action="#">
+                    <p>
+                        <label>
+                            <input name="group4" type="radio" class="with-gap" />
+                            <span>Inmediata</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="group4" type="radio" class="with-gap"/>
+                            <span>1-2semanas</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="group4" type="radio" class="with-gap"/>
+                            <span> 3semanas+</span>
+                        </label>
+                        </p>
+                    </form>
+            <a href="#question9">OK<i class="fas fa-check"></i></a>
+            </div>
+    </section>
+    <section id="question9" style="display: none" class="questions">
+        <div class="">
+                <h5>9. Pretenciones de renta:</h5>
+            <form action="#">
+                    <p>
+                        <label>
+                            <input name="group5" type="radio" class="with-gap"/>
+                            <span>300-400mil</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="group5" type="radio" class="with-gap"/>
+                            <span>500-600mil</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="group5" type="radio" class="with-gap"/>
+                            <span>700-800mil+</span>
+                        </label>
+                        </p>
+                </form>
+            <a href="#formSent" id="finalOKForm">OK<i class="fas fa-check"></i></a>
+        </div>
+    </section>
+    <section id="formSent" style="display: none" class="questions">
+        <p>Tus datos se han guardado.</p>
+        <p>Ahora Mary se encargará de conectarte con el candidato ideal</p>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
