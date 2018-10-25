@@ -5,18 +5,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link type="text/css" rel="stylesheet" href="./assets/materialize-v1.0.0/materialize/css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="./src/CSS/form.css" media="screen,projection" />
   <title>HiMary HireMe</title>
 </head>
 
 <body>
-    
+    <section id="welcome">
+        <h1>Ingresa los datos para que Mary te conecte con el candidato ideal</h1>
+        <button id="goQuestions">Vamos</button>
+    </section>
+    <section id="questions" style="display: none">
+        <form>
+            <div class="chips chips-autocomplete">
+                
+                    <h5>1.¿Qué tipo de perfil estás buscando? Ej: Front-end, Chef.</h5>
+                    <input class="custom-class">
+                    <button href="#">OK<i class="fas fa-check"></i></button>
+                </div>
+            <div class="chips chips-autocompleteDos">
+                    <h5>2. Lista las habilidades técnicas necesarias para el cargo:</h5>
+                    <input class="custom-class">
+                    <button href="#">OK<i class="fas fa-check"></i></button>
+                </div>
+            <div class="chips chips-autocompleteTres">
+                    <h5>3. Lista las competencias necesarias para el cargo:</h5>
+                    <input class="custom-class">
+                    <button href="#">OK<i class="fas fa-check"></i></button>
+                </div>
+            <div class="">
+                    <h5>4. Es necesario el manejo de más de un idioma:</h5>
+                    <form action="#">
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span>No</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox"/>
+                                <span>Si</span>
+                                <div class="chips chips-autocompleteCuatro chips-placeholder">
+                                        <input class="custom-class">
+                                    </div>
+                              </label>
+                            </p>
+                          </form>
+                    <button href="#">OK<i class="fas fa-check"></i></button>
+                </div>
+        </form>
+    </section>
 
-  <script src="assets/materialize-v1.0.0/materialize/js/materialize.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
-  <script>
+    <script src="./assets/materialize-v1.0.0/materialize/js/materialize.min.js"></script>
+    <script src="../src/JS/FormEmpresas/funcMat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <script src="../src/JS/FormEmpresas/form.js"></script>
+    <script>
     // Initialize Firebase
     var config = {
       apiKey: "AIzaSyBx5jjY64coq7LLw62pSG3h1GhH4KShz5I",
