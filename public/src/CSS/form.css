@@ -22,7 +22,7 @@ section, main{
     width: 326px;
     height: 500px;
     background-color: rgba(255, 255, 255, 0.623);
-    margin-top: 5%;
+    margin-top: 1%;
     border-radius: 1em;
 }
 h1{
@@ -58,6 +58,7 @@ a{
     border:none;
     width: 400pt;
     height: 45pt;
+    margin-top: 8%;
 }
 .logo{
     margin-top: 10%;
@@ -73,7 +74,7 @@ a{
     padding: 1%;
     padding-top: 2%;
     margin-top: 2%;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
 }
 .chip{
     background: #ffff;
@@ -90,8 +91,9 @@ a{
 }
 h3{
     text-align: center;
-    padding-top: 30%;
+    padding-top: 7%;
     font-size: 20pt;
+    margin: 0% 5% 2% 5%;
 }
 .fa-times{
     float: right;
@@ -105,7 +107,7 @@ h3{
     .logo{
         margin-top: 50%;
     }
-    .rectangule, .rectangule2{
+    .rectangule{
         width: 100%;
         height: 600px;
         margin: 5%;
@@ -132,12 +134,24 @@ h3{
         padding-bottom: 7%;
     }
     .chips, form{
-        margin: 5% 5% 10% 5%;
+        margin: 5% 10% 10% 20% !important;
     }
     h6{
         font-size: 12pt;
         margin-top: 20%;
         opacity: 0.5;
     }
-
+    .rectangule2{
+        width: 326px;
+        height: 600px;
+        margin-top: 5%;
+    }
+    h3{
+        padding-top: 30%;
+        margin: 0%;
+    }
+    .mary{
+        margin-top: 10%;
+        height: 30%;
+    }
 }
