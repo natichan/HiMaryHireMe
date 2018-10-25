@@ -1,15 +1,60 @@
-#dashboard {
+/* #dashboard {
   display: none;
-}
+} */
 
 body {
   height: 100vh;
+}
+
+.login {
+  background-image: linear-gradient(to right, #8342dc, #02bfba);
+  height: 100vh;
+  color: #fff;
+  padding: 10vh 15vw;
+}
+
+.containerLogin {
+  padding-top: 15vh;
+  padding-bottom: 11vh;
+  background-color: rgba(255, 255, 255, 0.623);
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(120,119,120,1);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(120,119,120,1);
+  box-shadow: 0px 0px 18px 0px rgba(120,119,120,1);
+  border-radius: 15px;
+}
+
+.containerLogin label {
+  color: #333!important;
+}
+
+.btn-login {
+  border-radius: 30px;
+  color: #fff;
+  background-color: #009fe3;
+  width: 100%;
+}
+
+.btn-login:hover {
+  border-radius: 30px;
+  color: #fff;
+  background-color: #036b97;
+  width: 100%;
+}
+
+.label-login {
+  font-weight: 500;
+  color: #fff;
+  height: 40px;
+  border-radius: 16px;
+  background-color: #fff;
+  border-bottom: 1px solid #009fe3!important;
 }
 
 .banner {
   height: 12vh;
   border-bottom: 1px solid black;
   display: flex;
+  background-image: linear-gradient(to right, #8342dc, #02bfba);
 }
 
 #ranking-container {
@@ -23,12 +68,14 @@ body {
 }
 
 .mini-logo {
-  height: 12vh;
-  width: 10vw;
-  border: 1px solid black;
-  display: inline-flex;
+  height: 11vh;
   position: absolute;
-  left: 0;
+  top: 0.4vh;
+  left: 10px;
+}
+
+.mini-logo img {
+  height: 100%;
 }
 
 .filter-options {
@@ -37,8 +84,19 @@ body {
   height: 12vh;
 }
 
+.filter-options span {
+  border-left: 1px solid rgba(224, 224, 224, 0.568);
+  padding: 20px 0px;
+}
+
 .filter-options button {
   height: 100%;
+  background: transparent;
+  box-shadow: none;
+}
+
+.filter-options button:hover, .filter-options button:active {
+  background-color: #036b97;
 }
 
 .ranking {
@@ -56,12 +114,23 @@ body {
   background-color: darkgray;
   border-radius: 100%;
   margin: 2.5px 0;
+  color: #fff;
+  text-align: center;
 }
 
-.ranked-info {
-  padding: 10px;
+.skills {
+  margin-top: 30px;
 }
 
-.ranked-info section {
-  border: 1px solid black;
+.info-boxes {
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 19px -4px rgba(181,179,181,1);
+  -moz-box-shadow: 5px 5px 19px -4px rgba(181,179,181,1);
+  box-shadow: 5px 5px 19px -4px rgba(181,179,181,1);
+}
+
+@media (max-width: 480px) {
+  .login {
+    padding: 5vh 3vw;
+  }
 }
