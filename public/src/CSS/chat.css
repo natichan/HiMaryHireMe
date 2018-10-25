@@ -12,6 +12,7 @@ header {
 #menu{
     padding: 15px;
     cursor: pointer;
+    float: right;
 }
 
 .container1{
@@ -61,6 +62,7 @@ h1, h2 {
     color: white;
     padding: 2%;
 margin-left: 5%;
+font-size: 30px !important;
 }
 
 h1 {
