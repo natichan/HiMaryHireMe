@@ -27,8 +27,8 @@ function login() {
 function logout() {
   firebase.auth().signOut()
     .then(() => {
-      welcome.classList.remove('d-none');
-      dashboard.classList.add('d-none');
+      loginPage.style.display = 'block';
+      dashboard.style.display = 'none';
     })
     .catch();
 };
@@ -39,7 +39,8 @@ var myChart = new Chart(ctx, {
   data: {
     labels: ["Organización", "Responsabilidad", "Innovación", "Liderazgo", "Trabajo en Equipo", "Análisis", "Autoaprendizaje"],
     datasets: [{
-      data: [12, 19, 3, 5, 2, 3],
+      label: '',
+      data: [3, 4, 4, 2, 5, 3, 5],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',
@@ -76,7 +77,8 @@ var myChart = new Chart(ctx2, {
   data: {
     labels: ["HTML", "CSS", "JavaScript", "React", "Angular", "Bootstrap", "NodeJS", "Git"],
     datasets: [{
-      data: [12, 19, 3, 5, 2, 3],
+      label: '',
+      data: [5, 4, 4, 3, 1, 3, 2, 4],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',
