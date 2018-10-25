@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,37 @@
     <link rel="stylesheet" href="./src/CSS/chat.css">
     <link rel="stylesheet" href="./src/CSS/bottomLanding.css">
     <link type="text/css" rel="stylesheet" href="./assets/materialize-v1.0.0/materialize/css/materialize.min.css" media="screen,projection" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <title>HiMary HireMe</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <title>HiMary HireMe</title>
 </head>
+
 <body>
-    <header><img src="./assets/img/logo.png" alt="logoHiMaryHireMe" class="logo"><i id="menu" class="fas fa-bars fa-2x"></i></header>
+     <header>
+        <img src="assets/img/logo.png" alt="logoHiMaryHireMe" class="logo">
+        <i id="menu" class="fas fa-bars fa-2x"></i>
+    </header>
 
     <main>
-        <div class="container1">
-            
-        <div class="left">
-            <h1 id="presentacion" class="x">Soy Mary y estoy para ayudarte en tu postulación.</h1>
-            <h2 id="presentacion2" class="x">Completa los datos y comienza tu entrevista ahora.</h2>
-                <p id="comienzo" onclick=""><img class="maryAvatar" id="maryAvatar" src="./assets/img/asistente.png" alt="mary">Comencemos</p>
-                
-                <div id="output"></div>
-                <div id="container">
-                <input type="text" id="input" value="">
-                </div>
-        </div>
+        <div>
+            <div class="row color-container">
+                <div class="col m6 container-6">
+                    <img class="maryAvatar" id="maryAvatar" src="./assets/img/asistente.png" alt="mary">
+                    <h1 id="presentacion" class="x" style="font-weight: bold">¡Hola! Soy Mary, te invito a hacer match con tu empresa ideal.</h1>
+                    <h2 id="presentacion2" class="x" style="font-weight: bold">Tú eres único y cada empresa también lo es.</h2>
+                    
+                    <p id="comienzo" onclick="">Comencemos</p>
 
-        <div class="right">
-                <img src="./assets/img/2002.png" alt="foto" class="web">
+                    <div id="output"></div>
+                    <div id="container">
+                        <input type="text" id="input" value="">
+                    </div>
+                </div>
+
+                <div class="col m6">
+                    <img src="./assets/img/2002.png" alt="foto" class="web">
+                </div>
+            </div>
         </div>
-    </div>
     </main>
     <section class="container2 benet">
         <div class="row center-align">
@@ -60,10 +68,10 @@
           </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    <script src="./assets/materialize-v1.0.0/materialize/js/materialize.min.js"></script>
-    <!-- jquery for enter key press -->      
+        crossorigin="anonymous"></script>
+    <script src="./assets/materialize-v1.0.0/materialize/js/materialize.min.js"></script>  
     <script src="https://code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
     <script src="./src/JS/chat.js"></script>
 </body>
+
 </html>
