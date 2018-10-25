@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -44,13 +43,15 @@
   <div id="dashboard">
     <header class="banner">
       <div class="row">
-        <div class="mini-logo">
+        <div class="mini-logo" onclick="showGeneral()">
           <img src="assets/img/logo-white.png" alt="">
         </div>
         <div class="filter-options">
-          <button class="btn">Front-End</button>
+          <a href="form.html"><img src="assets/img/asistente.png" alt=""></a>
           <span></span>
-          <button class="btn">UX Designer</button>
+          <button class="btn" onclick="showFront()">Front-End</button>
+          <span></span>
+          <button class="btn" onclick="showUX()">UX Designer</button>
           <span></span>
           <button id="logout-btn" class="btn" onclick="logout()"><i class="fas fa-sign-out-alt"></i></button>
         </div>
@@ -59,89 +60,118 @@
     <main id="ranking-container" class="row">
       <aside class="ranking col m1 s12">
         <h6>TOP 10</h6>
-        <div class="ranked">
-          <p>MU</p>
-        </div>
-        <div class="ranked">
-          <p>MF</p>
-        </div>
-        <div class="ranked">
-          <p>NM</p>
-        </div>
-        <div class="ranked">
-          <p>CT</p>
-        </div>
-        <div class="ranked">
-          <p>RG</p>
-        </div>
-        <div class="ranked">
-          <p>ES</p>
-        </div>
-        <div class="ranked">
-          <p>PL</p>
-        </div>
-        <div class="ranked">
-          <p>EV</p>
-        </div>
-        <div class="ranked">
-          <p>AC</p>
-        </div>
-        <div class="ranked">
-          <p>AO</p>
-        </div>
+        <div id="rank"></div>
       </aside>
-      <!-- <canvas id="myChart" width="400" height="400"></canvas>  -->
-      <div class="main-page">
-        <div class="col m11 s12">
+      <div id="rankerInfo" class="main-page">
+        <!-- Info general -->
+        <div id="generalInfo" class="col m11 s12" style="padding: 0">
+          <h4 style="z-index: 1">RESUMEN</h4>
+          <img src="assets/img/template222-02.jpg" alt="" class="responsive-img">
+        </div>
+        <!-- Front -->
+        <div id="frontInfo" class="col m11 s12" style="padding: 0">
           <div class="row">
             <div class="col m6 s12">
               <section class="">
-                <h4>Nombre</h4>
-                <h6>Puntaje: 875pts<span><i class="fas fa-trophy"></i></span></h6>
+                <h4>NATALIA MARTÍNEZ</h4>
+                <h6>PUNTAJE: 875pts<span><i class="fas fa-trophy"></i></span></h6>
               </section>
-              <div class="info-boxes"">
+              <div class="info-boxes">
                 <section>
-                  <h5>Disponibilidad</h5>
-                  <p>Inmediata</p>
+                  <h5>DISPONIBILIDAD</h5>
+                  <p>1-2semanas</p>
                 </section>
-                <hr></hr>
+                <hr>
                 <section>
                   <h5>CV</h5>
                   <p>Ver</p>
                 </section>
-                <hr></hr>
+                <hr>
                 <section>
-                  <h5>Experiencia Laboral</h5>
-                  <p>1 -2 años</p>
+                  <h5>EXPERIENCIA LABORAL</h5>
+                  <p>4 años +</p>
                 </section>
-                <hr></hr>
+                <hr>
                 <section>
-                  <h5>Idiomas</h5>
-                  <p><span><img src="assets/img/spanish.jpeg" alt=""></span><span><img src="assets/img/english.jpeg" alt=""></span><span><img src="assets/img/german.jpeg" alt=""></span></p>
+                  <h5>IDIOMAS</h5>
+                  <p><span><img src="assets/img/spanish.jpeg" alt=""></span><span><img src="assets/img/english.jpeg"
+                        alt=""></p>
                 </section>
-                <hr></hr>
+                <hr>
                 <section>
-                  <h5>Pretensiones de renta</h5>
+                  <h5>PRETENSIONES DE RENTA</h5>
                   <p>800mil +</p>
-                </section>              
+                </section>
               </div>
             </div>
             <div class="col m6 s12">
               <section class="skills col m12 s12 info-boxes">
-                <h5>Habilidades</h5>
+                <h5>HABILIDADES</h5>
                 <div>
-                  <canvas id="myChart2"></canvas>
+                  <canvas id="frontTech" class="graphic"></canvas>
                 </div>
               </section>
               <section class="col m12 s12 info-boxes">
-                <h5>Competencias</h5>
+                <h5>COMPETENCIAS</h5>
                 <div>
-                  <canvas id="myChart"></canvas>
+                  <canvas id="frontSoft" class="graphic"></canvas>
                 </div>
               </section>
             </div>
           </div>
         </div>
+        <!-- UX -->
+        <div id="uxInfo" class="col m11 s12" style="padding: 0">
+          <div class="row">
+            <div class="col m6 s12">
+              <section class="">
+                <h4>MACARENA PAINEMAL</h4>
+                <h6>PUNTAJE: 875pts<span><i class="fas fa-trophy"></i></span></h6>
+              </section>
+              <div class="info-boxes">
+                <section>
+                  <h5>DISPONIBILIDAD</h5>
+                  <p>Inmediata</p>
+                </section>
+                <hr>
+                <section>
+                  <h5>CV</h5>
+                  <p>Ver</p>
+                </section>
+                <hr>
+                <section>
+                  <h5>EXPERIENCIA LABORAL</h5>
+                  <p>1-2 años</p>
+                </section>
+                <hr>
+                <section>
+                  <h5>IDIOMAS</h5>
+                  <p><span><img src="assets/img/spanish.jpeg" alt=""></span><span><img src="assets/img/english.jpeg"
+                        alt=""></span><span><img src="assets/img/german.jpeg" alt=""></span></p>
+                </section>
+                <hr>
+                <section>
+                  <h5>PRETENSIONES DE RENTA</h5>
+                  <p>700-800mil</p>
+                </section>
+              </div>
+            </div>
+            <div class="col m6 s12">
+              <section class="skills col m12 s12 info-boxes">
+                <h5>HABILIDADES</h5>
+                <div>
+                  <canvas id="uxTech" class="graphic"></canvas>
+                </div>
+              </section>
+              <section class="col m12 s12 info-boxes">
+                <h5>COMPETENCIAS</h5>
+                <div>
+                  <canvas id="uxSoft" class="graphic"></canvas>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>`
       </div>
     </main>
   </div>
@@ -171,3 +201,6 @@
 </body>
 
 </html>
+
+<!-- Banderas -->
+<!-- <span><img src="assets/img/spanish.jpeg" alt=""></span><span><img src="assets/img/english.jpeg" alt=""></span><span><img src="assets/img/german.jpeg" alt=""></span> -->
