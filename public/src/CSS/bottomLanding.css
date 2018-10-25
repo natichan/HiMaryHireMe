@@ -4,14 +4,23 @@
     padding-top: 45px;
 }
 .colorWhite{
-    background-color: rgba(255, 255, 255, 0.137);
+    background-color: rgba(255, 255, 255, 0.753);
     height: 150px;
 }
 .bottomImg{
-    width: 10em;
+    width: 30%;
+    margin-left: 30%;
 }
 .fa-chevron-right, .fa-chevron-left{
     font-size: 3em;
     padding: 50px 20px 0px 20px;
     color: #009FE3;
+}
+.recomendacion{
+    font-size: 1.5em;
+    color: #333333;
+}
+.benet{
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
