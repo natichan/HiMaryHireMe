@@ -6,106 +6,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link type="text/css" rel="stylesheet" href="./assets/materialize-v1.0.0/materialize/css/materialize.min.css" media="screen,projection" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
   <title>HiMary HireMe - Dashboard</title>
   <link rel="stylesheet" href="src/CSS/dashboard.css">
 </head>
 
 <body>
-  <div class="container">
-    <!-- Login Reclutador -->
-    <!-- <div id="loginPage">
-      <div class="logo">
-        <h5>Aquí va un logo</h5>
+  <!-- Login Reclutador -->
+  <!-- <section id="loginPage" class="login">
+    <div class="container containerLogin">
+      <div class="row">
+        <div class="text-center col xs12 s10 offset-s1 m6 offset-m3 l6 offset-l3">
+          <img src="assets/img/logo.png" class="img-responsive logoLogin" />
+        </div>
       </div>
+      <div class="row">
         <div class="row">
-          <div class="input-field col s12">
-            <input id="email" type="email" class="validate">
-            <label for="email">Email</label>
+          <div class="col xs12 s10 offset-s1 m6 offset-m3 l6 offset-l3">
+            <div class="input-field" style="padding-left: 0px; padding-right: 0px;">
+              <label for="email">Correo</label>
+              <input type="email" name="email" id="email" class="form-control datos-login label-login"/>
+            </div>
+            <div class="input-field" style="padding-left: 0px; padding-right: 0px;">
+              <label for="password">Contraseña</label>
+              <input type="password" name="password" id="password" class="form-control datos-login label-login" maxlength="20" />
+            </div>
+            <div class="form-group text-center">
+              <button class="btn btn-lg btn-login" type="button" onclick="login()"> Iniciar sesión</button>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="password" type="password" class="validate">
-            <label for="password">Password</label>
-          </div>
-        </div>
-        <button id="loginBtn" onclick="login()" class="btn">INGRESAR</button>
-    </div> -->
-  </div>
+      </div>
+    </div>
+  </section> -->
   <!-- Dashboard Page -->
   <div id="dashboard">
     <header class="banner">
       <div class="row">
         <div class="mini-logo">
-          <h5>Logo</h5>
+          <img src="assets/img/logo-white.png" alt="">
         </div>
         <div class="filter-options">
           <button class="btn">Front-End</button>
+          <span></span>
           <button class="btn">UX Designer</button>
         </div>
       </div>
     </header>
     <main id="ranking-container" class="row">
-      <aside class="ranking col m1">
+      <aside class="ranking col m1 s3">
         <h6>TOP 10</h6>
         <div class="ranked">
+          <p>MU</p>
         </div>
         <div class="ranked">
+          <p>MF</p>
         </div>
         <div class="ranked">
+          <p>NM</p>
         </div>
         <div class="ranked">
+          <p>CT</p>
         </div>
         <div class="ranked">
+          <p>RG</p>
         </div>
         <div class="ranked">
+          <p>ES</p>
         </div>
         <div class="ranked">
+          <p>PL</p>
         </div>
         <div class="ranked">
+          <p>EV</p>
         </div>
         <div class="ranked">
+          <p>AC</p>
         </div>
         <div class="ranked">
+          <p>AO</p>
         </div>
       </aside>
       <!-- <canvas id="myChart" width="400" height="400"></canvas>  -->
-      <div class="col m11">
-        <h4>Nombre</h4>
-        <div class="ranked-info">
+      <div class="main-page">
+        <div class="col m11 s9">
           <div class="row">
-            <div class="col m3">
-              <section class="score col m12">
-                <h5>Puntaje</h5>
+            <div class="col m6">
+              <section class="col m12">
+                <h4>Nombre</h4>
+                <h6>Puntaje: 875pts</h6>
               </section>
-              <section class="availability col m12">
-                <h5>Disponibilidad</h5>
+              <div class="ranked-info info-boxes col m12">
+                <section class="row">
+                  <h5>Disponibilidad</h5>
+                  <p>Inmediata</p>
+                </section>
+                <section class="row">
+                  <h5>CV</h5>
+                  <p>Ver</p>
+                </section>
+                <section class="row">
+                  <h5>Experiencia Laboral</h5>
+                  <p>1 -2 años</p>
+                </section>
+                <section class="row">
+                  <h5>Idiomas</h5>
+                  <p></p>
+                </section>
+                <section class="row">
+                  <h5>Pretensiones de renta</h5>
+                  <p>800mil +</p>
+                </section>
+              </div>
+            </div>
+            <div class="col m6">
+              <section class="skills col m12 info-boxes">
+                <h5>Habilidades</h5>
+                <div>
+                  <canvas id="myChart2"></canvas>
+                </div>
+              </section>
+              <section class="col m12 info-boxes">
+                <h5>Competencias</h5>
+                <div>
+                  <canvas id="myChart"></canvas>
+                </div>
               </section>
             </div>
-            <section class="skills col m9">
-              <h5>Skills</h5>
-              <div>
-                <canvas id="myChart"></canvas>
-              </div>
-            </section>
-          </div>
-          <div class="row">
-            <section class="language col m3">
-              <h5>Idiomas</h5>
-            </section>
-            <section class="experience col m3">
-              <h5>Experiencia</h5>
-            </section>
-            <section class="extra col m6">
-              <h5>Ubicación</h5>
-              <p>Santiago de Chile</p>
-              <h5>Pretensiones de Renta</h5>
-              <p>Rango aprox</p>
-              <h5>CV</h5><span><i class="fas fa-file"></i></span>
-            </section>
           </div>
         </div>
+
       </div>
     </main>
   </div>
