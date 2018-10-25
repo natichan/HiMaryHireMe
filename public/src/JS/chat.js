@@ -31,34 +31,55 @@ function bot() {
     }
 
     else if (questionNum == 1) {
-    output.innerHTML = '<h4>¿A qué cargo estás postulando?</h4>';
+    output.innerHTML = '<h4>Te haré breves preguntas para conocerte mejor</h4>';
     document.getElementById("input").value = "";   
-    question = '<h4>¿Cuáles son tus habilidades técnicas?</h4>';					      	
-    setTimeout(timedQuestion, 8000);
+    question = '<h4>¿A qué cargo estás postulando?</h4>';					      	
+    setTimeout(timedQuestion, 4000);
     }   
 
     else if (questionNum == 2) {
-      output.innerHTML = '<h4>¿manejas algún idioma además del español?</h4>';
+      output.innerHTML = '<h4>Bien...</h4>';  
       document.getElementById("input").value = "";   
-      question = '<h4>¿Tienes experiencia en el cargo? Cuánta?</h4>';					      	
-      setTimeout(timedQuestion, 7000);
+      question = '<h4> Cuáles son tus habilidades técnicas</h4>';					      	
+      setTimeout(timedQuestion, 2000);
       }   
 
     else if (questionNum == 3) {
-      output.innerHTML = '<h4>¿Por qué crees que eres la indicada para el cargo?</h4>';
+      output.innerHTML = '<h4>ya,</h4>';
       document.getElementById("input").value = "";   
-      question = '<h4>¿cuál es tu disponibilidad para el cargo?</h4>';					      	
-      setTimeout(timedQuestion, 10000);
+      question = '<h4>¿manejas algún idioma además del español?</h4>';					      	
+      setTimeout(timedQuestion, 2000);
       }   
 
       else if (questionNum == 4) {
-        output.innerHTML = '<h4>¿tienes inconvenientes para el traslado a nuestras oficinas?</h4>';
+        output.innerHTML = '<h4>ok</h4>';
         document.getElementById("input").value = "";   
-        question = '<h4>¿cuál es tu pretención de renta?</h4>';					      	
-        setTimeout(timedQuestion, 7000);
-        }   
-
+        question = '<h4>¿Tienes experiencia en el cargo?</h4>';					      	
+        setTimeout(timedQuestion, 2000);
+        } 
+        
         else if (questionNum == 5) {
+          output.innerHTML = '<h4>ok</h4>';
+          document.getElementById("input").value = "";   
+          question = '<h4>¿Por qué crees que eres la indicada para el cargo?</h4>';					      	
+          setTimeout(timedQuestion, 2000);
+          } 
+
+          else if (questionNum == 6) {
+            output.innerHTML = '<h4>ya</h4>';
+            document.getElementById("input").value = "";   
+            question = '<h4>¿cuál es tu disponibilidad para el cargo? </h4>';					      	
+            setTimeout(timedQuestion, 2000);
+            } 
+
+            else if (questionNum == 7) {
+              output.innerHTML = '<h4>bueno y</h4>';
+              document.getElementById("input").value = "";   
+              question = '<h4>¿cuál es tu pretención de renta?</h4>';					      	
+              setTimeout(timedQuestion, 2000);
+              } 
+
+        else if (questionNum == 8) {
           output.innerHTML = '<h4>Ya hemos acabado las preguntas. Puedes relajarte!</h4>';
           document.getElementById("input").value = "";   
           question = '<h4>Te mantendré al tanto de tu postulación. Saludos.</h4>';					      	
