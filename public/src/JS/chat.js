@@ -45,7 +45,7 @@ function bot() {
       }   
 
     else if (questionNum == 3) {
-      output.innerHTML = '<h4>ya,</h4>';
+      output.innerHTML = '<h4>perfecto, gracias por la información.</h4>';
       document.getElementById("input").value = "";   
       question = '<h4>¿manejas algún idioma además del español?</h4>';					      	
       setTimeout(timedQuestion, 2000);
@@ -59,28 +59,28 @@ function bot() {
         } 
         
         else if (questionNum == 5) {
-          output.innerHTML = '<h4>ok</h4>';
+          output.innerHTML = '<h4>me gustaría saber...</h4>';
           document.getElementById("input").value = "";   
           question = '<h4>¿Por qué crees que eres la indicada para el cargo?</h4>';					      	
           setTimeout(timedQuestion, 2000);
           } 
 
           else if (questionNum == 6) {
-            output.innerHTML = '<h4>ya</h4>';
+            output.innerHTML = '<h4>excelente,</h4>';
             document.getElementById("input").value = "";   
             question = '<h4>¿cuál es tu disponibilidad para el cargo? </h4>';					      	
             setTimeout(timedQuestion, 2000);
             } 
 
             else if (questionNum == 7) {
-              output.innerHTML = '<h4>bueno y</h4>';
+              output.innerHTML = '<h4>bueno y...</h4>';
               document.getElementById("input").value = "";   
               question = '<h4>¿cuál es tu pretención de renta?</h4>';					      	
               setTimeout(timedQuestion, 2000);
               } 
 
         else if (questionNum == 8) {
-          output.innerHTML = '<h4>Ya hemos acabado las preguntas. Puedes relajarte!</h4>';
+          output.innerHTML = '<h4>Ya hemos acabado las preguntas. Gracias por la información!</h4>';
           document.getElementById("input").value = "";   
           question = '<h4>Te mantendré al tanto de tu postulación. Saludos.</h4>';					      	
           setTimeout(timedQuestion, 5000);

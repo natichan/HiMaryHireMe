@@ -15,6 +15,7 @@ header {
     float: right;
 }
 
+
 .container1{
     height: 100vh;
     display: flex;
@@ -44,10 +45,11 @@ header {
     float: left;
     max-width: 80px;
    height: 80px;
-    margin-right: 20px;
+    
     border-radius: 50%;
-    margin-left: 25%;
-    margin-top: 10px;
+    margin-left: -30px;
+    margin-top: -30px;
+    
 }
 
 #comienzo {
@@ -56,7 +58,7 @@ header {
     border-radius: 25px;
     padding: 20px;
     margin: 10px 0;
-    width: 30%;
+    width: 35%;
     margin-left: 25%;
     color: white;
     font-weight: bold;
