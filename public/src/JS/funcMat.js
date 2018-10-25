@@ -24,7 +24,7 @@ $('.chips-autocompleteDos').chips({
         'Node.js': null,
         'Git': null,
         'Bootstrap': null,
-        'Card-sorting': null
+        'Card-sorting': null,
         'Comunicación-visual': null,
       },
       limit: 8,
