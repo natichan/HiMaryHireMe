@@ -3,7 +3,9 @@ $('.chips-autocomplete').chips({
     data: {
       'Front-end': null,
       'UX-designer': null,
-      'Back-end': null
+      'Back-end': null,
+      'UI': null
+
     },
     limit: 1,
     minLength: 1
@@ -16,14 +18,16 @@ $('.chips-autocompleteDos').chips({
         'CSS': null,
         'HTML': null,
         'React': null,
-        'Marvel': null,
+        'Research': null,
         'Testing': null,
         'Prototipado': null,
         'Angular': null,
         'Node.js': null,
         'Git': null,
         'Bootstrap': null,
-        'Card-sorting': null
+        'Card-sorting': null,
+        'Comunicación-visual': null,
+
       },
       limit: 8,
       minLength: 1

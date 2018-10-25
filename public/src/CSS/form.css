@@ -5,7 +5,8 @@ h1, h4, h5, h6, h3{
     color: #333333;
 }
 h4{
-    padding-bottom: 7%;
+    padding-bottom: 1%;
+    font-size: 16pt;
 }
 section, main{
     height: 100vh;
@@ -35,7 +36,7 @@ h1, h5{
 }
 h6{
     font-size: 12pt;
-    margin-top: 20%;
+    margin-top: 4%;
     opacity: 0.5;
 }
 #goQuestions{
@@ -64,17 +65,15 @@ a{
 .fa-user-tie, .fa-cogs, .fa-brain, .fa-language, .fa-map-marked-alt, .fa-exchange-alt, .fa-business-time, .fa-user-clock, .fa-hand-holding-usd{
     background: #009FE3;
     border-radius: 3em;
-    font-size: 6em;
+    font-size: 5em;
     color: white;
     width: 100pt;
     height: 100pt;
     text-align: center;
-    padding: 5%;
-    margin-top: 11%;
-    margin-bottom: 10%;
-}
-h4{
-    font-size: 16pt;
+    padding: 1%;
+    padding-top: 2%;
+    margin-top: 2%;
+    margin-bottom: 3%;
 }
 .chip{
     background: #ffff;
@@ -83,7 +82,8 @@ h4{
     width: 5px;
 }
 .chips, form{
-    margin: 5% 5% 10% 5%;
+    margin: 2% 20% 2% 20%;
+    width: 60%;
 }
 [type="radio"]:not(:checked)+span, [type="radio"]:checked+span{
     color: #333333;
@@ -119,4 +119,25 @@ h3{
     .years{
         margin-top: 30% !important;
     }
+    .fa-user-tie, .fa-cogs, .fa-brain, .fa-language, .fa-map-marked-alt, .fa-exchange-alt, .fa-business-time, .fa-user-clock, .fa-hand-holding-usd{
+        font-size: 6em;
+        width: 100pt;
+        height: 100pt;
+        text-align: center;
+        padding: 5%;
+        margin-top: 11%;
+        margin-bottom: 10%;
+    }
+    h4{
+        padding-bottom: 7%;
+    }
+    .chips, form{
+        margin: 5% 5% 10% 5%;
+    }
+    h6{
+        font-size: 12pt;
+        margin-top: 20%;
+        opacity: 0.5;
+    }
+
 }
