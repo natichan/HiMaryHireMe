@@ -75,7 +75,7 @@ function bot() {
             else if (questionNum == 7) {
               output.innerHTML = '<h4>bueno y...</h4>';
               document.getElementById("input").value = "";   
-              question = '<h4>¿cuál es tu pretención de renta?</h4>';					      	
+              question = '<h4>¿cuál es tu pretención de renta? Responde con números, por favor.</h4>';					      	
               setTimeout(timedQuestion, 2000);
               } 
 
