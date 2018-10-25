@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    height: 80px;;
+}
+
+#menu{
+    padding: 5px;
+    cursor: pointer;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    background-color: #8342DC;
+    height: 100vh;
+    width: 50%;
+}
