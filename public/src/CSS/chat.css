@@ -1,0 +1,99 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid lightgray 1px;
+}
+
+.logo {
+    width: 120px;
+    height: 80px;;
+}
+
+#menu{
+    padding: 15px;
+    cursor: pointer;
+}
+
+.container1{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    background-color: #8342DC;
+    height: 100vh;
+    width: 50%;
+}
+
+.web {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    padding-left: 5%;
+    display: block;
+}
+
+.maryAvatar {
+    float: left;
+    max-width: 80px;
+   height: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: -10px;
+}
+
+#comienzo {
+    text-align: center;
+    background-color: #009FE3;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 30%;
+    margin-left: 25%;
+    color: white;
+    font-weight: bold;
+}
+
+h1, h2 {
+    color: white;
+    padding: 2%;
+margin-left: 5%;
+}
+
+h1 {
+    margin-top: 30%;
+}
+
+#output, #container, #input, h4 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+h4 {
+     text-align: center;
+     color: white;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+}
+
+.container2 i{
+color: #009FE3;
+border: solid lightgray 2px;
+padding: 70px;
+border-radius: 50%;
+}
+
+.box1, .box2, .box3 {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+}

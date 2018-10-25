@@ -1,3 +1,18 @@
+document.getElementById("output").style.display = "none";
+document.getElementById("input").style.display = "none";
+
+document.getElementById("comienzo").addEventListener("click", (e)=> {
+  document.getElementById("output").style.display = "block";
+  document.getElementById("input").style.display = "block";
+  let y = document.getElementsByClassName("x");
+  let i;
+  for (i = 0; i < y.length; i++) {
+      y[i].style.display = 'none';
+  }
+
+  
+})
+
 var questionNum = 0;													// keep count of question, used for IF condition.
 var question = '<h4>Hola, cómo te llamas?</h4>';				  // first question
 
