@@ -55,6 +55,17 @@ $('.chips-autocompleteDos').chips({
       minLength: 1
     }
   });
+  $('.chips-autocompleteCinco').chips({
+    autocompleteOptions: {
+      data: { 
+        'Santiago, Chile': null,
+        'Concepción, Chile': null,
+        'Arica, Chile': null,
+      },
+      limit: 1,
+      minLength: 1
+    }
+  });
 var chip = {
     tag: 'chip content',
     image: '', //optional
