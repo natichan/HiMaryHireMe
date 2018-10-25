@@ -23,60 +23,112 @@
             </div>
         </div>
     </main>
-    <section id="question" style="display: none" class="questions">
-        <div class="chips chips-autocomplete">
-                <h5>1.¿Qué tipo de perfil estás buscando? Ej: Front-end, Chef.</h5>
-                <input class="custom-class">
-                <a href="#question2">OK<i class="fas fa-check"></i></a>
+    <section id="question" style="display: none" class="questions container">
+        <div class="row">
+            <div class="col s12 rectangule center-align">
+                <div>       
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h4>Pregunta: 1 de 9</h4>
+                <div class="chips chips-autocomplete">
+                    <h5>¿Qué tipo de perfil estás buscando?</h5>
+                    <input class="custom-class">
+                    </div>
+                    <a href="#question2">Siguiente</a>
+                    <h6>Lista los skills necesarias para el cargo:</h6>
+                </div>
             </div>
         </section>
-    <section id="question2" style="display: none" class="questions">
+    <section id="question2" style="display: none" class="questions container">
+        <div class="row">
+                <div class="col s12 rectangule center-align">
+                    <div>       
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4>Pregunta: 2 de 9</h4>
             <div class="chips chips-autocompleteDos">
-                    <h5>2. Lista las habilidades técnicas necesarias para el cargo:</h5>
+                    <h5>Lista las habilidades técnicas necesarias para el cargo:</h5>
                     <input class="custom-class">
-                    <a href="#question3">OK<i class="fas fa-check"></i></a>
                 </div>
-    </section>
-    <section id="question3" style="display: none" class="questions">
-        <div class="chips chips-autocompleteTres">
-                <h5>3. Lista las competencias necesarias para el cargo:</h5>
-                <input class="custom-class">
-                <a href="#question4">OK<i class="fas fa-check"></i></a>
+                <a href="#question3">Siguiente</a>
+                <h6>Lista las competencias necesarias para el cargo:</h6>
             </div>
-    </section>
-    <section id="question4" style="display: none" class="questions">
-        <div class="">
-            <h5>4. Es necesario el manejo de más de un idioma:</h5>
-            <form action="#">
-                    <p>
-                        <label>
-                        <input name="group1" type="radio" class="with-gap"/>
-                        <span>No</span>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                        <input name="group1" type="radio" class="with-gap"/>
-                        <span>Si</span>
-                        <div class="chips chips-autocompleteCuatro chips-placeholder">
-                                <input class="custom-class">
-                            </div>
-                        </label>
-                    </p>
-                    </form>
-            <a href="#question5">OK<i class="fas fa-check"></i></a>
         </div>
     </section>
-    <section id="question5" style="display: none" class="questions">
-        <div class="chips chips-autocompleteCinco">
-                <h5>5. Ubicación donde se desempeñaran los labores:</h5>
-                <input class="custom-class">
-                <a href="#question6">OK<i class="fas fa-check"></i></a>
+    <section id="question3" style="display: none" class="questions container">
+        <div class="row">
+            <div class="col s12 rectangule center-align">
+                <div>       
+                    <i class="fas fa-brain"></i>     
+                </div>
+                <h4>Pregunta: 3 de 9</h4>
+            <div class="chips chips-autocompleteTres">
+                    <h5>Lista las competencias necesarias para el cargo:</h5>
+                    <input class="custom-class">
+                </div>
+                <a href="#question4">Siguiente</a>
+                <h6>Es necesario el manejo de más de un idioma</h6>
             </div>
+        </div>
     </section>
-    <section id="question6" style="display: none" class="questions">
-        <div class="">
-                <h5>6. Disposición de traslado:</h5>
+    <section id="question4" style="display: none" class="questions container">
+        <div class="row">
+                <div class="col s12 rectangule2">
+                    <div class="center-align">       
+                        <i class="fas fa-language"></i>                    
+                    </div>
+                    <h4 class="center-align">Pregunta: 4 de 9</h4>
+                <div>
+                    <h5 class="center-align">Es necesario el manejo de más de un idioma:</h5>
+                    <form action="#">
+                            <p>
+                                <label>
+                                <input name="group1" type="radio" class="with-gap"/>
+                                <span>No</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                <input name="group1" type="radio" class="with-gap"/>
+                                <span>Si ¿Cuál?
+                                <div class="chips chips-autocompleteCuatro">
+                                        <input class="custom-class">
+                                    </div></span>
+                                </label>
+                            </p>
+                            </form>
+                </div>
+                <div class="center-align">
+                <a href="#question5">Siguiente</a>
+                <h6 class="other">Ubicación donde se desempeñaran los labores</h6>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="question5" style="display: none" class="questions container">
+        <div class="row">
+                <div class="col s12 rectangule center-align">
+                    <div>       
+                        <i class="fas fa-map-marked-alt"></i>                    
+                    </div>
+                    <h4 class="center-align">Pregunta: 5 de 9</h4>
+            <div class="chips chips-autocompleteCinco">
+                    <h5>Ubicación donde se desempeñaran los labores:</h5>
+                    <input class="custom-class">
+                </div>
+                <a href="#question6">Siguiente</a>
+                <h6 >Disposición de traslado</h6>
+            </div>
+        </div>
+    </section>
+    <section id="question6" style="display: none" class="questions container">
+        <div class="row">
+                <div class="col s12 rectangule">
+                    <div class="center-align">       
+                        <i class="fas fa-language"></i>                    
+                    </div>
+            <div>
+                <h5 class="center-align">Disposición de traslado:</h5>
                 <form action="#">
                         <p>
                             <label>
@@ -91,12 +143,17 @@
                             </label>
                         </p>
                     </form>
-                <a href="#question7">OK<i class="fas fa-check"></i></a>
+                </div>
+                <div class="center-align">
+                    <a href="#question7">Siguiente</a>
+                    <h6 class="years">Años de experiencia</h6>
+                </div>
             </div>
+        </div>
     </section>
     <section id="question7" style="display: none" class="questions">
         <div class="">
-                <h5>7. Años de experiencia:</h5>
+                <h5>Años de experiencia:</h5>
                 <form action="#">
                         <p>
                             <label>
@@ -123,7 +180,7 @@
                                 </label>
                                 </p>
                         </form>
-                <a href="#question8">OK<i class="fas fa-check"></i></a>
+                <a href="#question8">Siguiente</a>
             </div>
     </section>
     <section id="question8" style="display: none" class="questions">
@@ -149,7 +206,7 @@
                         </label>
                         </p>
                     </form>
-            <a href="#question9">OK<i class="fas fa-check"></i></a>
+            <a href="#question9">Siguiente</a>
             </div>
     </section>
     <section id="question9" style="display: none" class="questions">
@@ -175,7 +232,7 @@
                         </label>
                         </p>
                 </form>
-            <a href="#formSent" id="finalOKForm">OK<i class="fas fa-check"></i></a>
+            <a href="#formSent" id="finalOKForm">Envíar</a>
         </div>
     </section>
     <section id="formSent" style="display: none" class="questions">

@@ -51,7 +51,7 @@ $('.chips-autocompleteDos').chips({
         'Francés': null,
         'Alemán': null,
       },
-      limit: 3,
+      limit: 1,
       minLength: 1
     }
   });
