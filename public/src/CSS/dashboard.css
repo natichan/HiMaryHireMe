@@ -5,6 +5,7 @@
 body {
   max-height: 100vh;
   color: #333;
+  overflow: hidden;
 }
 
 .login {
@@ -74,6 +75,7 @@ body {
   position: absolute;
   top: 0.4vh;
   left: 10px;
+  cursor: pointer;
 }
 
 .mini-logo img {
@@ -84,8 +86,17 @@ body {
   height: 12vh;
 }
 
+.filter-options a {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.filter-options img {
+  height: 10vh;
+}
+
 .filter-options span {
-  border-left: 1px solid rgba(224, 224, 224, 0.568);
   padding: 20px 0px;
 }
 
@@ -93,6 +104,7 @@ body {
   height: 100%;
   background: transparent;
   box-shadow: none;
+  border-radius: 0;
 }
 
 .filter-options button:hover,
@@ -111,8 +123,8 @@ body {
 }
 
 .ranked {
-  height: 54px;
-  width: 54px;
+  height: 51px;
+  width: 51px;
   border-radius: 100%;
   margin: 2.5px 0;
   color: darkgrey;
@@ -126,10 +138,7 @@ body {
 }
 
 .info-boxes {
-  border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 19px -4px rgba(181, 179, 181, 1);
-  -moz-box-shadow: 5px 5px 19px -4px rgba(181, 179, 181, 1);
-  box-shadow: 5px 5px 19px -4px rgba(181, 179, 181, 1);
+  background: rgba(255, 255, 255, 0.486);
   padding: 10px;
 }
 
@@ -137,10 +146,47 @@ body {
   width: 100%;
 }
 
-#myChart,
-#myChart2 {
-  max-height: 240px;
+.graphic {
+  max-height: 235px;
 }
+
+#generalInfo h4 {
+  z-index: 1;
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-weight: 700;
+}
+
+#frontInfo, #uxInfo {
+  display: none;
+  height: 88vh;
+  background-image: url(../../assets/img/123-04.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 20px!important;
+}
+
+#frontInfo h4, #uxInfo h4 {
+  font-weight: 700;
+}
+
+#frontInfo h5, #uxInfo h5 {
+  font-weight: 700;
+  color: #033e57;
+}
+
+#frontInfo p, #uxInfo p {
+  color: #fff;
+}
+
+.round {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 5px solid #009fe3;
+}
+
 
 @media (max-width: 480px) {
   .login {
@@ -168,7 +214,6 @@ body {
     padding: 8px;
   }
   .ranking {
-    flex-direction: row;
     height: 10vh;
     width: max-content;
     position: fixed;
