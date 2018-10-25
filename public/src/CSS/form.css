@@ -60,6 +60,10 @@ a{
     height: 45pt;
     margin-top: 8%;
 }
+.aDash{
+    background: none !important;
+    color: none !important;
+}
 .logo{
     margin-top: 10%;
 }
